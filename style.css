@@ -31,6 +31,7 @@ body {
 
 /* Estilo do cabeçalho */
 header {
+    background: url(img/coração\ vermelho1.jfif);
     background-color: var(--cor-primaria); /* Define o fundo do cabeçalho com a cor primária */
     color: white;                          /* Define o texto como branco */
     padding: 10px;                         /* Adiciona 10px de padding ao redor do conteúdo */
@@ -79,6 +80,9 @@ h2 {
     height: 100px;      /* Define a altura da imagem do perfil para 100px */
     border-radius: 50%; /* Torna a imagem circular */
 }
+.perfil :hover{
+    transform: scale(1.10); /* Aumenta o tamanho do cartão em 10% quando o mouse passa por cima */
+}
 
 /* Estilo do formulário */
 form {
@@ -125,3 +129,4 @@ footer {
     width: 100%;          /* Garante que o rodapé ocupe toda a largura da tela */
     bottom: 0;            /* Posiciona o rodapé na parte inferior da tela */
 }
+
