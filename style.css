@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    margin: 0;               /* Remove a margem padrão de todos os elementos */
+    padding: 0;              /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box;  /* Faz com que o padding e a borda sejam incluídos no tamanho total dos elementos */
+}
+
+/* Cores de tema */
+:root {
+    --cor-clara: #f7f7f7;     /* Cor de fundo clara para o tema */
+    --cor-escura: #333;       /* Cor escura para o fundo no modo escuro */
+    --cor-primaria: #ff5f72;  /* Cor principal (usada em botões e elementos destacados) */
+    --cor-secundaria: #ffc3a0; /* Cor secundária (usada em alguns elementos de destaque) */
+    --cor-texto-claro: #333;  /* Cor do texto quando o fundo é claro */
+    --cor-texto-escuro: #fff; /* Cor do texto quando o fundo é escuro */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
+    background-color: var(--cor-clara); /* Define o fundo da página com a cor clara */
+    color: var(--cor-texto-claro);     /* Define a cor do texto como a cor escura */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves para mudanças de cor */
+}
+
+/* Estilo para o modo escuro */
+.dark-mode {
+    background-color: var(--cor-escura); /* Define o fundo escuro no modo dark */
+    color: var(--cor-texto-escuro);      /* Define a cor do texto como branco no modo dark */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--cor-primaria); /* Define o fundo do cabeçalho com a cor primária */
+    color: white;                          /* Define o texto como branco */
+    padding: 10px;                         /* Adiciona 10px de padding ao redor do conteúdo */
+    text-align: center;                    /* Centraliza o conteúdo do cabeçalho */
+}
+
+/* Estilo dos botões */
+button {
+    background: none;              /* Remove o fundo do botão */
+    border: 1px solid white;       /* Define uma borda branca ao redor do botão */
+    color: white;                  /* Define a cor do texto como branco */
+    padding: 5px 10px;             /* Adiciona padding ao redor do texto do botão */
+    cursor: pointer;              /* Muda o cursor para pointer ao passar sobre o botão */
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: white;         /* Define o fundo como branco ao passar o mouse */
+    color: var(--cor-primaria);       /* Muda a cor do texto para a cor primária */
+}
+
+/* Estilo das seções */
+section {
+    padding: 20px;  /* Adiciona 20px de padding dentro das seções */
+    margin: 20px 0; /* Adiciona margem de 20px na parte superior e inferior */
+}
+
+/* Estilo dos títulos das seções (h2) */
+h2 {
+    color: var(--cor-primaria); /* Define a cor do título como a cor primária */
+}
+
+/* Estilo dos perfis (div de perfil) */
+.perfil {
+    display: inline-block;     /* Faz com que o perfil seja exibido em linha com outros perfis */
+    margin: 10px;              /* Adiciona 10px de margem ao redor do perfil */
+    padding: 10px;             /* Adiciona 10px de padding dentro do perfil */
+    background-color: var(--cor-secundaria); /* Define o fundo do perfil com a cor secundária */
+    text-align: center;        /* Centraliza o conteúdo dentro do perfil */
+    border-radius: 10px;       /* Adiciona bordas arredondadas ao perfil */
+}
+
+/* Estilo da imagem do perfil */
+.perfil img {
+    width: 100px;       /* Define a largura da imagem do perfil para 100px */
+    height: 100px;      /* Define a altura da imagem do perfil para 100px */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;             /* Exibe os elementos do formulário em flexbox */
+    flex-direction: column;    /* Organiza os itens do formulário de forma vertical */
+}
+
+/* Estilo das labels dentro do formulário */
+form label {
+    margin-top: 10px;  /* Adiciona 10px de margem no topo de cada label */
+}
+
+/* Estilo dos campos de entrada dentro do formulário */
+form input {
+    padding: 8px;             /* Adiciona 8px de padding ao redor do conteúdo do input */
+    margin-top: 5px;          /* Adiciona 5px de margem no topo do input */
+    border: 1px solid #ccc;  /* Define uma borda cinza clara para os inputs */
+    border-radius: 5px;      /* Torna os cantos do input arredondados */
+}
+
+/* Estilo do botão dentro do formulário */
+form button {
+    margin-top: 10px;             /* Adiciona 10px de margem no topo do botão */
+    background-color: var(--cor-primaria); /* Define o fundo do botão com a cor primária */
+    color: white;                 /* Define a cor do texto como branco */
+    border: none;                 /* Remove a borda do botão */
+    padding: 10px;                /* Adiciona 10px de padding dentro do botão */
+    border-radius: 5px;          /* Torna os cantos do botão arredondados */
+    cursor: pointer;             /* Muda o cursor para pointer ao passar sobre o botão */
+}
+
+/* Efeito de hover no botão do formulário */
+form button:hover {
+    background-color: #ff3b5c;  /* Muda o fundo do botão para uma cor mais escura no hover */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;   /* Centraliza o conteúdo do rodapé */
+    padding: 10px;        /* Adiciona 10px de padding dentro do rodapé */
+    background-color: var(--cor-primaria); /* Define o fundo do rodapé com a cor primária */
+    color: white;         /* Define a cor do texto como branco */
+    position: fixed;      /* Fixa o rodapé na parte inferior da tela */
+    width: 100%;          /* Garante que o rodapé ocupe toda a largura da tela */
+    bottom: 0;            /* Posiciona o rodapé na parte inferior da tela */
+}
